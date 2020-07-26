@@ -4,38 +4,46 @@ pipeline {
     stages {
         stage ('1-Build') {
             steps {
-                echo "Start of Stage Build"
+                echo "---Start of Stage Build-----"
+                echo "*** *** ***"
                 echo "Building.........."
-                echo "End of Stage Build"
                 sh "date"
                 sh "whoami"
                 sh "pwd"
                 sh "ls -la"
                 sh "sleep 5"
+                echo "---End of Stage Build---"
+                echo "*** *** ***"
             }
         }
         stage ('2-Test') {
             steps {
-                echo "Start of Stage Test"
+                echo "*** *** ***"
+                echo "---Start of Stage Test---"
+                echo "*** *** ***"
                 echo "Testind.........."
-                echo "End of Stage Test"
                 sh "date"
                 sh "whoami"
                 sh "pwd"
                 sh "ls -la"
                 sh "sleep 5"
+                echo "---End of Stage Test---"
+                echo "*** *** ***"
             }
         }
         stage ('3-Deploy') {
             steps {
-                echo "Start of Stage Deploy"
+                echo "*** *** ***"
+                echo "---Start of Stage Deploy---"
+                echo "*** *** ***"
                 echo "Deploying.........."
-                echo "End of Stage Deploy"
                 sh "date"
                 sh "whoami"
                 sh "pwd"
                 sh "ls -la"
                 sh "sleep 5"
+                echo "---End of Stage Deploy---"
+                echo "*** *** ***"
             }
         }
         
